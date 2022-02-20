@@ -124,3 +124,28 @@ h1 {
   font-family: 'Julius Sans One', 'sans-serif';
   font-size: 35px;
 }
+
+ol a {
+  font-weight: bold;
+}
+
+ul li {
+  font-family: 'Julius Sans One';
+  line-height: 25px;
+}
+
+h3 {
+  color: green;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: 'Julius Sans One';
+  color: purple;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+p {
+  line-height: 23px;
+}
