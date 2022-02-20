@@ -40,5 +40,6 @@ a[href^="http://"]
 }
 
 a[href$='.com'] {
+  text-decoration: underline;
   color: black;
 }
