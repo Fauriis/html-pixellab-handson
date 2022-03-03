@@ -24,3 +24,14 @@
   background-color: yellow;
 }
 
+.box-red {
+  transform: rotate(-30deg);
+}
+
+.box-green {
+  transform: translate(25px, 100px);
+}
+
+.box-purple {
+  transform: rotate(50deg) translate(100px, o);
+}
