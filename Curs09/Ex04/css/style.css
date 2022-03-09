@@ -33,5 +33,13 @@
 }
 
 .box-purple {
-  transform: rotate(50deg) translate(100px, o);
+  transform: translate(100px) rotate(50deg);
+}
+
+.box-brown {
+  transform: skew(10deg, 10deg) translate(5px, 10px);
+}
+
+.box-yellow {
+  transform: scale(1.2) rotate(-15deg);
 }
