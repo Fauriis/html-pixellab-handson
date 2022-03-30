@@ -380,37 +380,47 @@ a {
 .container {
   width: 100%;
   max-width: 1284px;
+  margin: 0 auto;
 }
 
 .header-top {
   background: #2b2b2b url('../images/banner.png') center center / cover
     no-repeat;
-  display: block;
+  height: 300px;
+}
+
+.header-top-inner .container {
   max-width: 1284px;
+  display: flex;
   width: 100%;
   height: 300px;
-  padding-left: 200px;
-  padding-right: 600px;
+}
+
+.header-social-media ul,
+.header-search ul {
+  justify-content: space-between;
 }
 
 .header-social-media li {
-  display: inline-block;
-  margin-left: 8px;
-  margin-right: 44px;
-  margin-top: 20px;
   color: #ffff;
-  position: relative;
-  left: 60px;
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.header-search li {
+  color: #000;
+  float: right;
+  padding-top: -20px;
+  padding-left: 22px;
+  padding-right: 20px;
 }
 
 .header-social-media li:nth-child(5) {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: normal;
-}
-
-.header-search ul li {
-  display: inline-block;
 }
 
 .header-bottom .nav-main li {
@@ -423,21 +433,41 @@ a {
   color: #ffff;
 }
 
-.header-bottom .nav-main {
+.header-bottom {
   background-color: #2b2b2b;
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 52px;
+}
+
+.nav-main .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-main li {
+  padding-right: 30px;
+  padding-top: 18px;
+  padding-left: 30px;
+  font-weight: lighter;
+  font-size: 19px;
 }
 
 /* HEADER */
 
 .footer {
   background-color: #e8e8e8;
+  height: 160px;
+}
+
+.footer-inner .container {
   width: 1284px;
-  height: 150px;
+  height: 160px;
   max-width: 100%;
-  margin-top: 120px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .footer-contact,
@@ -446,11 +476,17 @@ a {
   display: inline-block;
   margin-left: 80px;
   margin-right: 80px;
-  text-align: center;
+  text-align: left;
+  margin-top: 20px;
+  line-height: 150%;
 }
 
-.footer-nav {
-  margin-top: 10px;
+.footer-nav ul {
+  display: inline-block;
+}
+
+.footer-nav ul:last-of-type {
+  margin-left: 150px;
 }
 
 .footer-connect label {
@@ -470,6 +506,15 @@ a {
 }
 
 /* FOOTER */
+
+.line {
+  width: 70%;
+  border: 1px solid #cccccc;
+  opacity: 100%;
+  margin-top: 40px;
+  margin-left: 90px;
+  margin-right: 70px;
+}
 
 .home-catalog-preview header h1 {
   text-align: center;
