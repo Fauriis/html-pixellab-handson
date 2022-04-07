@@ -416,11 +416,34 @@ a {
 }
 
 .header-search li {
-  color: #000;
   float: right;
   margin-top: 30px;
-  padding-right: 10px;
-  margin-right: 20px;
+  position: relative;
+  right: 50px;
+  margin-right: 30px;
+}
+
+.header-search .search{
+  display: inline-block;
+  position: relative;
+  right: 220px;
+  bottom: 19px;
+background-color: white;
+border: 1px solid #cccccc;
+padding: 1px;
+}
+
+.header-search button{
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  border: none;
+  background-color: white;
+}
+
+.header-search input[type=text]{
+  text-align: center;
+  border: none;
 }
 
 .header-social-media li:nth-child(5) {
@@ -442,6 +465,15 @@ a {
 .header-bottom {
   background-color: #2b2b2b;
   height: 42px;
+}
+
+.header-bottom .nav-main a{
+  color: #fff;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header-bottom .nav-main a:hover{
+  color:#cccccc;
 }
 
 /* HEADER */
@@ -502,18 +534,16 @@ a {
 
 /* FOOTER */
 
-.line {
-  width: 70%;
+.border-top {
+  width: 100%;
   border: 1px solid #cccccc;
   opacity: 100%;
-  margin-top: 40px;
-  margin-left: 90px;
-  margin-right: 70px;
+  margin-top: 50px;
 }
 
 .home-catalog-preview header h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 35px;
@@ -536,32 +566,27 @@ a {
 
 .home-catalog-preview .product-tile-image {
   position: relative;
+  width: 100%;
 }
 
 .home-catalog-preview .product-tile-image .product-tile-badge {
   position: absolute;
   top: 5%;
-  right: 18%;
+  right: 8%;
 }
 
 .home-catalog-preview .product-tile .product-tile-pricing {
   text-align: center;
-  margin-top: 20px;
+position: relative;
+bottom: 30px;
 }
 
 .image-content {
   display: flex;
-  margin-top: 70px;
-  margin-bottom: 70px;
 }
 
 .home-info {
   flex: 40%;
-  padding: 15px;
-}
-
-.image-content picture {
-  margin-left: 150px;
 }
 
 .home-info header h1 {
@@ -575,9 +600,20 @@ a {
 
 .home-info p {
   text-align: justify;
-  line-height: 180%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  margin: 10px 60px 60px 20px;
-  color: #2b2b2b;
+  line-height: 200%;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 10px 60px 60px 28px;
+  color: #2B2B2B;
+}
+
+.home-catalog-preview .product-tile .cta{
+  cursor: pointer;
+  color: #2B2B2B;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.home-catalog-preview .product-tile .cta:hover{
+  color: rgb(219, 30, 30);
+  background-color: #2b2b2b;
 }
